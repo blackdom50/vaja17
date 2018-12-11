@@ -1,0 +1,91 @@
+<html>
+<head>
+<title>Moja domaèa stran</title>
+</head>
+<body style="background-color: white;">
+<style>
+.button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 0px;
+  text-align: center;
+  font-size: 24px;
+  cursor: pointer;
+  border: 1px solid #4CAF50;
+  border-left: 8px solid green;  
+}
+
+.button:hover {
+  background-color: green;
+}
+
+.naslov {
+  background-color: white;
+  border: none;
+  color: black;
+  padding: 0px 0px;
+  text-align: left;
+  font-size: 45px;
+  cursor: pointer;
+}
+
+.naslov:hover {
+  color: green;
+  cursor: no-drop;
+}
+
+.text {
+  border: none;
+  font-size: 16px;
+  cursor: default;
+}
+
+.skupi {
+  border: none;
+  background-color: white;
+  cursor: default;
+}
+
+.skupi2 {
+  border: none;
+  background-color: #4CAF50;
+  cursor: default;
+}
+
+
+</style>
+
+<h1 class="skupi">
+<pre class="naslov"> Moja domaèa stran</pre>
+<div class="skupi2">
+<input class="button" value="Moji podatki" onclick="Mojipodatki()">
+<script>
+function Mojipodatki() {
+  window.location.assign("vaja17a.html")
+}
+</script>
+<input class="button" value="Moje povezave" onclick="Mojepovezave()">
+<script>
+function Mojepovezave() {
+  window.location.assign("vaja17b.html")
+}
+</script>
+<input class="button" value="Moji filmi" onclick="Mojifilmi()">
+<script>
+function Mojifilmi() {
+  window.location.assign("vaja17c.html")
+}
+</script>
+</h1>
+</div>
+
+<pre class="text">
+
+    Ime: Domen 
+Priimek: Marinèiè
+ E-mail: <a href="mailto:domen1.marincic@gmail.com">domen1.marincic@gmail.com</a>
+</pre>
+<br>
+<img src="slika1.jpg" alt="slika1" width="240" height="240">
+</body>
+<html>
