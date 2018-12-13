@@ -2,24 +2,90 @@
 <head>
 <title> Moje povezave </title>
 </head>
-<body>
+<body style="background-color: #ccffcc;">
+<meta charset="Windows-1250">
+<link href='https://fonts.googleapis.com/css?family=Aladin' rel='stylesheet'>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+.button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 0px;
+  text-align: center;
+  font-size: 24px;
+  cursor: pointer;
+  border: 1px solid #4CAF50;
+  border-left: 8px solid green;  
+}
+
+.button:hover {
+  background-color: green;
+}
+
 .naslov {
-  background-color: white;
+  background-color: #ccffcc;
   border: none;
-  color: black;
-  padding: 0px 0px;
+  color: #607557;
+  padding: 5px 40px;
   text-align: left;
+  font-family: 'Aladin';
   font-size: 45px;
   cursor: pointer;
 }
+
 .naslov:hover {
   color: green;
   cursor: no-drop;
 }
+
+.text {
+  padding: 20px 60px;
+  border: none;
+  font-size: 20px;
+  font-family: Arial;
+  cursor: default;
+}
+
+.skupi {
+  border: none;
+  background-color: #ccffcc;
+  cursor: default;
+}
+
+.skupi2 {
+  border: none;
+  background-color: #4CAF50;
+  cursor: default;
+}
 </style>
-<h1 class="naslov"> Moje povezave </h1>
-<pre>
+
+
+<h1 class="skupi">
+<h1 class="naslov">  Moje povezave </h1> 
+<nav class="skupi2"> 
+<input class="button" value="Moji podatki" onclick="Mojipodatki()">
+<script>
+function Mojipodatki() {
+  window.location.assign("vaja17a.html")
+}
+</script>
+<input class="button" value="Moji filmi" onclick="Mojifilmi()">
+<script>
+function Mojifilmi() {
+  window.location.assign("vaja17c.html")
+}
+</script>
+<input class="button" value="Anketa" onclick="Anketa()">
+<script>
+function Anketa() {
+  window.location.assign("vaja17d.html")
+}
+</script>
+</h1>
+</nav>
+
+
+<pre class="text">
 <a href="http://www.sckr.si">ŠC Kranj</a>
 
 <a href="http://www.google.si">Spletni iskalnik</a>
@@ -27,6 +93,8 @@
 <a href="http://www.facebook.com">Facebook</a>
 
 <a href="http://www.youtube.com">Youtube</a>
+
+
 
 <a href="index.html">Nazaj na domačo stran</a>
 </pre>

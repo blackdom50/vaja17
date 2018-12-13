@@ -1,19 +1,12 @@
 <html>
 <head>
-<title>Moji filmi</title>
+<title> Končana anketa </title>
 </head>
 <body style="background-color: #ccffcc;">
 <meta charset="Windows-1250">
 <link href='https://fonts.googleapis.com/css?family=Aladin' rel='stylesheet'>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<h1 class="naslov">  Moji filmi</h1>
-
 <style>
-table, th, td {
-  padding: 17px 15px;
-  border: 1px solid black;
-}
-
 .button {
   background-color: #4CAF50;
   color: white;
@@ -46,15 +39,16 @@ table, th, td {
 }
 
 .text {
+  padding: 20px 60px;
   border: none;
-  font-size: 16px;
+  font-size: 50px;
+  font-family: Arial;
   cursor: default;
-  padding: 0px 0px;
 }
 
 .skupi {
   border: none;
-  background-color: white;
+  background-color: #ccffcc;
   cursor: default;
 }
 
@@ -63,8 +57,11 @@ table, th, td {
   background-color: #4CAF50;
   cursor: default;
 }
-
 </style>
+
+
+<h1 class="skupi">
+<h1 class="naslov">  Moje povezave </h1> 
 <nav class="skupi2"> 
 <input class="button" value="Moji podatki" onclick="Mojipodatki()">
 <script>
@@ -78,6 +75,12 @@ function Mojepovezave() {
   window.location.assign("vaja17b.html")
 }
 </script>
+<input class="button" value="Moji filmi" onclick="Mojifilmi()">
+<script>
+function Mojifilmi() {
+  window.location.assign("vaja17c.html")
+}
+</script>
 <input class="button" value="Anketa" onclick="Anketa()">
 <script>
 function Anketa() {
@@ -87,73 +90,17 @@ function Anketa() {
 </h1>
 </nav>
 
-<body class="text">
-<br><br>
-<table>
-  <tr>
-    <th>Film</th>
-    <th>Režija</th>
-    <th>Leto</th>
-    <th>Dolžina</th>
-    <th>Jezik</th>
-    <th>Podnapisi</th>
-    <th>Ocena</th>
 
-  </tr>
-  <tr>
-    <td>Shrek 1</td>
-    <td>Janko Panko</td>
-    <td>1990</td>
-    <td>90min</td>
-    <td>Sloveščina</td>
-    <td>Angleški</td>
-    <td>5/10</td>
- </tr>
-  <tr>
-    <td>Shrek 2</td>
-    <td>Anže Premrl</td>
-    <td>2012</td>
-    <td>30min</td>
-    <td>Sloveščina</td>
-    <td>Angleški</td>
-    <td>7/10</td>
-  </tr>
-  <tr>
-    <td>Shrek 3</td>
-    <td>Svetka Mohorič</td>
-    <td>2045</td>
-    <td>10min</td>
-    <td>Sloveščina</td>
-    <td>Angleški</td>
-    <td>2/10</td>
-  </tr>
-  <tr>
-    <td>Shrek 4</td>
-    <td>Tilen Svežan</td>
-    <td>2011</td>
-    <td>120min</td>
-    <td>Sloveščina</td>
-    <td>Angleški</td>
-    <td>4/10</td>
-  </tr>
-  <tr>
-    <td>Shrek 5</td>
-    <td>Marija Ahčin</td>
-    <td>2000</td>
-    <td>130min</td>
-    <td>Sloveščina</td>
-    <td>Angleški</td>
-    <td>5/10</td>
-  </tr>
-</table>
-
-</body>
-</html>
+<pre class="text">
 
 
-<pre>
-<a href="index.html">Nazaj na domačo stran</a>
+								
+		              Hvala za vaše mnenje!
+
+
+
+
 </pre>
-
+<a href="index.html">Nazaj na domačo stran</a>
 </body>
 <html>

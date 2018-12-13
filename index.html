@@ -1,8 +1,12 @@
+<!DOCTYPE html>
 <html>
 <head>
 <title>Moja domača stran</title>
 </head>
-<body style="background-color: white;">
+<body style="background-color: #ccffcc;">
+<meta charset="Windows-1250">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='https://fonts.googleapis.com/css?family=Aladin' rel='stylesheet'>
 <style>
 .button {
   background-color: #4CAF50;
@@ -20,11 +24,12 @@
 }
 
 .naslov {
-  background-color: white;
+  background-color: #ccffcc;
   border: none;
-  color: black;
-  padding: 0px 0px;
+  color: #607557;
+  padding: 5px 40px;
   text-align: left;
+  font-family: 'Aladin';
   font-size: 45px;
   cursor: pointer;
 }
@@ -35,14 +40,16 @@
 }
 
 .text {
+  padding: 0px 50px;
   border: none;
-  font-size: 16px;
+  font-size: 20px;
+  font-family: Arial;
   cursor: default;
 }
 
 .skupi {
   border: none;
-  background-color: white;
+  background-color: #ccffcc;
   cursor: default;
 }
 
@@ -56,8 +63,8 @@
 </style>
 
 <h1 class="skupi">
-<pre class="naslov"> Moja domača stran</pre>
-<div class="skupi2">
+<h1 class="naslov">  Moja domača stran</h1> 
+<nav class="skupi2"> 
 <input class="button" value="Moji podatki" onclick="Mojipodatki()">
 <script>
 function Mojipodatki() {
@@ -76,16 +83,25 @@ function Mojifilmi() {
   window.location.assign("vaja17c.html")
 }
 </script>
+<input class="button" value="Anketa" onclick="Anketa()">
+<script>
+function Anketa() {
+  window.location.assign("vaja17d.html")
+}
+</script>
 </h1>
-</div>
+</nav>
 
 <pre class="text">
 
-    Ime: Domen 
-Priimek: Marinčič
- E-mail: <a href="mailto:domen1.marincic@gmail.com">domen1.marincic@gmail.com</a>
+      Ime:   Domen 
+Priimek:   Marinčič
+  E-mail:   <a href="mailto:domen1.marincic@gmail.com">domen1.marincic@gmail.com</a>
+ 
+ Ta spletna stran je dostopna online na: <a href="https://blackdom50.github.io/vaja17/index.html">Moja prva spletna stran</a>
+
+
+          <img src="slika1.jpg" alt="slika1" width="240" height="240">
 </pre>
-<br>
-<img src="slika1.jpg" alt="slika1" width="240" height="240">
 </body>
 <html>
