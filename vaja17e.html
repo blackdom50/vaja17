@@ -2,11 +2,24 @@
 <head>
 <title> Končana anketa </title>
 </head>
-<body style="background-color: #ccffcc;">
+<body style="background-color: white;">
 <meta http-equiv="Content-Type" content="text/html;charset=windows-1250"/>
 <link href='https://fonts.googleapis.com/css?family=Aladin' rel='stylesheet'>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+a:link {
+  color: blue;
+}
+
+a:link:hover {
+  color: darkblue;
+}
+
+body {
+    display: block;
+    margin: 0px;
+}
+
 .button {
   background-color: #4CAF50;
   color: white;
@@ -15,22 +28,40 @@
   font-size: 24px;
   cursor: pointer;
   border: 1px solid #4CAF50;
-  border-left: 8px solid green;  
+  border-left: 8px solid green;
+
 }
 
 .button:hover {
   background-color: green;
 }
 
+.button1 {
+  background-color: #4CAF50;
+  color: white;
+  padding: 0px 0px;
+  font-size: 35px;
+  cursor: pointer;
+  border: 0px solid #4CAF50;
+  height:52px;
+  width:52px;
+}
+
+.button1:hover {
+  background-color: green;
+
+}
+
 .naslov {
-  background-color: #ccffcc;
+  background-color: white;
   border: none;
   color: #607557;
-  padding: 5px 40px;
+  padding: 20px 60px;
   text-align: left;
-  font-family: 'Aladin';
+  font-family: 'Arial';
   font-size: 45px;
   cursor: pointer;
+  margin: 0px;
 }
 
 .naslov:hover {
@@ -39,9 +70,9 @@
 }
 
 .text {
-  padding: 20px 60px;
+  padding: 0px 50px;
   border: none;
-  font-size: 50px;
+  font-size: 55px;
   font-family: Arial;
   cursor: default;
 }
@@ -57,12 +88,18 @@
   background-color: #4CAF50;
   cursor: default;
 }
+
 </style>
 
 
-<h1 class="skupi">
-<h1 class="naslov">  Moje povezave </h1> 
-<nav class="skupi2"> 
+<div class="skupi2">
+
+<button class="button1" onclick="domov()">&#8962;</button>
+<script>
+function domov() {
+  window.location.assign("index.html") 
+  }
+</script>
 <input class="button" value="Moji podatki" onclick="Mojipodatki()">
 <script>
 function Mojipodatki() {
@@ -81,26 +118,19 @@ function Mojifilmi() {
   window.location.assign("vaja17c.html")
 }
 </script>
-<input class="button" value="Anketa" onclick="Anketa()">
-<script>
-function Anketa() {
-  window.location.assign("vaja17d.html")
-}
-</script>
 </h1>
-</nav>
-
+</div>
 
 <pre class="text">
 
 
 								
-		              Hvala za vaše mnenje!
-
-
-
-
+		                 <b>Hvala za vaše mnenje!</b>
+					  
 </pre>
-<a href="index.html">Nazaj na domačo stran</a>
+<pre style="text-align:center;padding-top:320px;">
+<a href="http://www.sckr.si/tsc/vss/">About<a> VSS Kranj Announcements Community Security Center Resolution Center Seller Center Policies Affiliates Help & Contact Site Map
+    Copyright © 1995-2018 VSS Kranj Inc. All Rights Reserved. Accessibility, User Agreement, Privacy, Cookies and AdChoice
+</pre>
 </body>
 <html>

@@ -2,11 +2,28 @@
 <head>
 <title> Moje povezave </title>
 </head>
-<body style="background-color: #ccffcc;">
+<body style="background-color: white;">
 <meta http-equiv="Content-Type" content="text/html;charset=windows-1250"/>
 <link href='https://fonts.googleapis.com/css?family=Aladin' rel='stylesheet'>
+<link rel="stylesheet" href="path/to/balloon.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+a:visited {
+  color: blue;
+}
+a:link {
+  color: blue;
+}
+
+a:link:hover {
+  color: darkblue;
+}
+
+body {
+    display: block;
+    margin: 0px;
+}
+
 .button {
   background-color: #4CAF50;
   color: white;
@@ -15,22 +32,40 @@
   font-size: 24px;
   cursor: pointer;
   border: 1px solid #4CAF50;
-  border-left: 8px solid green;  
+  border-left: 8px solid green;
+
 }
 
 .button:hover {
   background-color: green;
 }
 
+.button1 {
+  background-color: #4CAF50;
+  color: white;
+  padding: 0px 0px;
+  font-size: 35px;
+  cursor: pointer;
+  border: 0px solid #4CAF50;
+  height:52px;
+  width:52px;
+}
+
+.button1:hover {
+  background-color: green;
+
+}
+
 .naslov {
-  background-color: #ccffcc;
+  background-color: white;
   border: none;
   color: #607557;
-  padding: 5px 40px;
+  padding: 20px 60px;
   text-align: left;
-  font-family: 'Aladin';
+  font-family: 'Arial';
   font-size: 45px;
   cursor: pointer;
+  margin: 0px;
 }
 
 .naslov:hover {
@@ -39,7 +74,7 @@
 }
 
 .text {
-  padding: 20px 60px;
+  padding: 0px 50px;
   border: none;
   font-size: 20px;
   font-family: Arial;
@@ -57,12 +92,19 @@
   background-color: #4CAF50;
   cursor: default;
 }
+
 </style>
 
 
 <h1 class="skupi">
 <h1 class="naslov">  Moje povezave </h1> 
 <nav class="skupi2"> 
+<button class="button1" onclick="domov()">&#8962;</button>
+<script>
+function domov() {
+  window.location.assign("index.html") 
+  }
+</script>
 <input class="button" value="Moji podatki" onclick="Mojipodatki()">
 <script>
 function Mojipodatki() {
@@ -85,7 +127,7 @@ function Anketa() {
 </nav>
 
 
-<pre class="text">
+<pre class="text" style="padding-top:60px">
 <a href="http://www.sckr.si">ŠC Kranj</a>
 
 <a href="http://www.google.si">Spletni iskalnik</a>
@@ -94,9 +136,13 @@ function Anketa() {
 
 <a href="http://www.youtube.com">Youtube</a>
 
+__________________________________________________
 
-
-<a href="index.html">Nazaj na domačo stran</a>
+<a title="SPLETNA STRAN JE DOSTOPNA ONLINE" href="https://blackdom50.github.io/vaja17/index.html">Moja prva spletna stran (ONLINE)</a>
+</pre>
+<pre style="text-align:center;padding-top:340px">
+<a style="color: blue;" href="http://www.sckr.si/tsc/vss/">About<a> VSS Kranj Announcements Community Security Center Resolution Center Seller Center Policies Affiliates Help & Contact Site Map
+    Copyright © 1995-2018 VSS Kranj Inc. All Rights Reserved. Accessibility, User Agreement, Privacy, Cookies and AdChoice
 </pre>
 
 </body>

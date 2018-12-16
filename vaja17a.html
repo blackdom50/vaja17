@@ -2,11 +2,27 @@
 <head>
 <title> Moji podatki </title>
 </head>
-<body style="background-color: #ccffcc;">
+<body style="background-color: white;">
 <meta charset="Windows-1250">
 <link href='https://fonts.googleapis.com/css?family=Aladin' rel='stylesheet'>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+a:visited {
+  color: blue;
+}
+a:link {
+  color: blue;
+}
+
+a:link:hover {
+  color: darkblue;
+}
+
+body {
+    display: block;
+    margin: 0px;
+}
+
 .button {
   background-color: #4CAF50;
   color: white;
@@ -15,22 +31,40 @@
   font-size: 24px;
   cursor: pointer;
   border: 1px solid #4CAF50;
-  border-left: 8px solid green;  
+  border-left: 8px solid green;
+
 }
 
 .button:hover {
   background-color: green;
 }
 
+.button1 {
+  background-color: #4CAF50;
+  color: white;
+  padding: 0px 0px;
+  font-size: 35px;
+  cursor: pointer;
+  border: 0px solid #4CAF50;
+  height:52px;
+  width:52px;
+}
+
+.button1:hover {
+  background-color: green;
+
+}
+
 .naslov {
-  background-color: #ccffcc;
+  background-color: white;
   border: none;
   color: #607557;
-  padding: 5px 40px;
+  padding: 20px 60px;
   text-align: left;
-  font-family: 'Aladin';
+  font-family: 'Arial';
   font-size: 45px;
   cursor: pointer;
+  margin: 0px;
 }
 
 .naslov:hover {
@@ -41,7 +75,7 @@
 .text {
   padding: 0px 50px;
   border: none;
-  font-size: 17px;
+  font-size: 20px;
   font-family: Arial;
   cursor: default;
 }
@@ -62,6 +96,12 @@
 <h1 class="skupi">
 <h1 class="naslov">  Moji podatki</h1> 
 <nav class="skupi2"> 
+<button class="button1" onclick="domov()">&#8962;</button>
+<script>
+function domov() {
+  window.location.assign("index.html") 
+  }
+</script>
 <input class="button" value="Moje povezave" onclick="Mojepovezave()">
 <script>
 function Mojepovezave() {
@@ -83,35 +123,35 @@ function Anketa() {
 </h1>
 </nav>
 
-<pre class="text">Ime in priimek:  Domen Marinčič
-                Kraj:  Glinek 12, 1291 Škofljica
-            Tel. št.:  051-430-058 
+<pre class="text">
+<b>Ime in priimek:</b>  Domen Marinčič
+                 <b>Kraj:</b>  Glinek 12, 1291 Škofljica
+             <b>Tel. št.:</b>  051-430-058 
  
-Programi katere najbolj uporabljam so:
+<b>Programi katere najbolj uporabljam so:</b>
 
-         - Google Chrome,
-         - Discord,
-         - Steam,
-         - MS Office programsko opremo,
-         - EasySoft,
-         - Logo!soft comfort,
-         - beležka,
-         - paint...
-
+        &rArr;  Google Chrome,
+        &rArr;  Discord,
+        &rArr;  Steam,
+        &rArr;  MS Office programsko opremo,
+        &rArr;  EasySoft,
+        &rArr;  Logo!soft comfort,
+        &rArr;  beležka,
+        &rArr;  paint...
+		
 Uporabljam Windows 10 na namiznem računalniku in prenosniku, na katera sem w10 naložil sam. Nekaj časa sem imel na prenosniku tudi dual boot za win10 in linux.
-
-Sam sebe, na področju poznavanja računalništva in informatike, bi ocenil s 5, na skali od 1 - 10.
-Mogoče bi si dal še nižjo oceno, saj obstaja tako veliko programov in sporti novih nastaja, dodatno vsak od teh programov ima ogromno funkcij in orodij,
-s katerimi se je treba seznaniti. 
+Na področju poznavanja računalništva in informatike, bi ocenil s 5, na skali 1 - 10.
+Zakaj tako nizko? Obstaja tako veliko programov in sporti novih nastaja, dodatno vsak od teh programov ima ogromno funkcij in orodij,
+o katerih nimam pojma.
 Vsaj osnove, bi pa rekel da mi grejo od rok. Z nalaganjem OS, programov, gonilnikov, posodobitev nimam nobenih težav.
 Za troubleshooting se pa lahko brez problema obrnem na "strica Googla".
 Tudi s "hardware-om" nimam težav, saj sem že sestavil svoj "rig". In tudi pomagam sorodnikom in prijateljom pri nadgradnji PC sistema ali klasičnega
 pucanja/troubleshooting programov.
 
-            <img src="elonmusk.jpg" alt="Elon Musk" width="200" height="130,">
-											
-<a href="index.html">Nazaj na domačo stran</a>
-</pre>
+<img title="Elon Musk" style="padding-left:100px" src="elonmusk.jpg" alt="Elon Musk" width="200" height="130,">
+</pre><pre>                              <i>Elon Musk</i>									
+</pre>						  
+
 
 </body>
 <html>
