@@ -7,6 +7,13 @@
 <meta http-equiv="Content-Type" content="text/html;charset=windows-1250"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+.img1:hover:not(:focus){
+    -webkit-transform:scale(1.2); /* or some other value */
+    transform:scale(1.2);
+	margin:40px 121px;
+	margin-top:60px
+}
+
 a:visited {
   color: blue;
 }
@@ -73,7 +80,7 @@ body {
 }
 
 .text {
-  padding: 0px 50px;
+  margin: 0px 50px;
   border: none;
   font-size: 20px;
   font-family: Arial;
@@ -91,9 +98,7 @@ body {
   background-color: #4CAF50;
   cursor: default;
 }
-
 </style>
-
 <h1 class="skupi">
 <h1 class="naslov">  Moja domača stran</h1> 
 <nav class="skupi2">
@@ -131,10 +136,16 @@ function Anketa() {
 </nav>
 
 
-<div>
+
 <table class="text">
   <tr>
-    <th><img title="moja slika" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG0OUE_KHNO1uP8BwZT9RFB0cHbzxV2zDS8-Qv8GFdC8bGwjZx" alt="google.com" style="width:142px;height:142px;padding:20px 110px;padding-top:80px;" onmouseover="src='slika1.jpg';style='width:120px;height:142px;padding:20px 121px;padding-top:80px;'" onmouseout="src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG0OUE_KHNO1uP8BwZT9RFB0cHbzxV2zDS8-Qv8GFdC8bGwjZx';style='width:142px;height:142px;padding:20px 110px;padding-top:80px;'">
+    <th>
+	<div>
+	<img class="img1" title="moja slika" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG0OUE_KHNO1uP8BwZT9RFB0cHbzxV2zDS8-Qv8GFdC8bGwjZx" 
+	alt="google.com" style="width:142px;height:142px;margin:20px 110px;margin-top:80px;border: 1px solid white;" 
+	onmouseover="src='slika1.jpg';style='width:120px;height:142px;border: 1px solid black;'"
+	onmouseout="src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG0OUE_KHNO1uP8BwZT9RFB0cHbzxV2zDS8-Qv8GFdC8bGwjZx';style='width:142px;height:142px;margin:20px 110px;margin-top:80px;border: 1px solid white;'">
+	</div>
 	<pre>
  Ime:   Domen
 Priimek:   Marinčič
@@ -147,7 +158,7 @@ E-mail:   <a title="E-mail" href="mailto:domen1.marincic@gmail.com">domen1.marin
 	</th>
     <th><img src="https://image.freepik.com/free-icon/phone-symbol-of-an-auricular-inside-a-circle_318-50305.jpg" alt="google.com" style="width:122px;height:122px;padding:20px 140px;padding-top:80px;">
     <pre>
-Tel. št.:  <a href="tel:+386 51 430 058">051-430-058<a>
+Tel. št.:  <a title="Telefonska številka" href="tel:+386 51 430 058">051-430-058<a>
     </pre>
 	</th>
     <th><img src="https://image.flaticon.com/icons/svg/106/106123.svg" alt="google.com" style="width:122px;height:122px;padding:20px 120px;padding-top:80px;">
@@ -157,10 +168,10 @@ Tel. št.:  <a href="tel:+386 51 430 058">051-430-058<a>
 	</th>
 </tr>
 </table>   	 
-</div> 
+ 
 <div>
 
-<pre style="text-align:center;padding-top:320px;">
+<pre style="text-align:center;padding-top:200px;">
 <a href="http://www.sckr.si/tsc/vss/">About<a> VSS Kranj Announcements Community Security Center Resolution Center Seller Center Policies Affiliates Help & Contact Site Map
     Copyright © 1995-2018 VSS Kranj Inc. All Rights Reserved. Accessibility, User Agreement, Privacy, Cookies and AdChoice
 </pre>
