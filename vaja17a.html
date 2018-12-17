@@ -1,4 +1,4 @@
-<html>
+Ôªø<html>
 <head>
 <title> Moji podatki </title>
 </head>
@@ -7,6 +7,41 @@
 <link href='https://fonts.googleapis.com/css?family=Aladin' rel='stylesheet'>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+.spoilerbutton {
+  display: block;
+  margin: 10px 0;
+  color: black;
+  border: 2px solid black;
+  font-size: 18px;
+  background-color: white;
+  padding: 5px 10px;
+  font-weight: bold;
+}
+
+.spoilerbutton:hover {
+   color: #333333;
+   border: 2px solid #333333;
+   cursor: pointer;
+}
+
+.spoiler {
+  overflow: hidden;
+  background: white;
+}
+
+.spoiler>div {
+  margin: 5px;
+  overflow: hidden;
+  transition: all 1s ease;
+}
+
+.spoilerbutton[value="Veƒç"]+.spoiler>div {
+  max-height: 0;
+}
+
+.spoilerbutton[value="Skrij"]+.spoiler>div {
+  max-height: 250px;
+}
 a:visited {
   color: blue;
 }
@@ -37,6 +72,7 @@ body {
 
 .button:hover {
   background-color: green;
+  cursor: pointer;
 }
 
 .button1 {
@@ -124,9 +160,9 @@ function Anketa() {
 </nav>
 
 <pre class="text">
-<b>Ime in priimek:</b>  Domen MarinËiË
-                 <b>Kraj:</b>  Glinek 12, 1291 äkofljica
-             <b>Tel. öt.:</b>  051-430-058 
+<b>Ime in priimek:</b>  Domen Marinƒçiƒç
+                 <b>Kraj:</b>  Glinek 12, 1291 ≈†kofljica
+             <b>Tel. ≈°t.:</b>  051-430-058 
  
 <b>Programi katere najbolj uporabljam so:</b>
 
@@ -136,20 +172,22 @@ function Anketa() {
         &rArr;  MS Office programsko opremo,
         &rArr;  EasySoft,
         &rArr;  Logo!soft comfort,
-        &rArr;  beleûka,
+        &rArr;  bele≈æka,
         &rArr;  paint...
 		
-Uporabljam Windows 10 na namiznem raËunalniku in prenosniku, na katera sem w10 naloûil sam. Nekaj Ëasa sem imel na prenosniku tudi dual boot za win10 in linux.
-Na podroËju poznavanja raËunalniötva in informatike, bi ocenil s 5, na skali 1 - 10.
+<input style="margin-left:50px;" class="spoilerbutton" type="button" value="Veƒç" onclick="this.value=this.value=='Veƒç'?'Skrij':'Veƒç';"> <div class="spoiler"><div>
+Uporabljam Windows 10 na namiznem raƒçunalniku in prenosniku, na katera sem w10 nalo≈æil sam. Nekaj ƒçasa sem imel na prenosniku tudi dual boot za win10 in linux.
+Na podroƒçju poznavanja raƒçunalni≈°tva in informatike, bi ocenil s 5, na skali 1 - 10.
 Zakaj tako nizko? Obstaja tako veliko programov in sporti novih nastaja, dodatno vsak od teh programov ima ogromno funkcij in orodij,
 o katerih nimam pojma.
-Vsaj osnove, bi pa rekel da mi grejo od rok. Z nalaganjem OS, programov, gonilnikov, posodobitev nimam nobenih teûav.
+Vsaj osnove, bi pa rekel da mi grejo od rok. Z nalaganjem OS, programov, gonilnikov, posodobitev nimam nobenih te≈æav.
 Za troubleshooting se pa lahko brez problema obrnem na "strica Googla".
-Tudi s "hardware-om" nimam teûav, saj sem ûe sestavil svoj "rig". In tudi pomagam sorodnikom in prijateljom pri nadgradnji PC sistema ali klasiËnega
-pucanja/troubleshooting programov.
-
-<img title="Elon Musk" style="padding-left:100px" src="elonmusk.jpg" alt="Elon Musk" width="200" height="130,">
-</pre><pre>                              <i>Elon Musk</i>									
+Tudi s "hardware-om" nimam te≈æav, saj sem ≈æe sestavil svoj "rig". In tudi pomagam sorodnikom in prijateljom pri nadgradnji PC sistema ali klasiƒçnega
+pucanja/troubleshooting programov.</pre>
+  </div> 
+ </div>
+<img title="Elon Musk" style="margin-left:100px;border:2px solid black;" src="elonmusk.jpg" alt="Elon Musk" width="200" height="130,">
+<pre>                       <i>Elon Musk</i>									
 </pre>						  
 
 
