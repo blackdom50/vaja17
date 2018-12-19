@@ -1,16 +1,45 @@
 <html lang="sl">
 <head>
+<meta http-equiv="Content-Type" content="text/html;charset=windows-1250"/>
 <title>Moja domača stran</title>
 </head>
 <body style="background-color: white;">
 <meta http-equiv="Content-Type" content="text/html;charset=windows-1250"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-.img1:hover:not(:focus){
-    -webkit-transform:scale(1.2); /* or some other value */
-    transform:scale(1.2);
+
+.img1:hover{
+    -webkit-transform:scale(1.1,1.1);
+    transform:scale(1.1,1.1);
 	margin:40px 121px;
 	margin-top:60px
+	-webkit-transition: -webkit-transform 0.5s ease;
+    -moz-transition: -moz-transform 0.5s ease;
+    transition: transform 0.5s ease;
+	cursor: help;
+	
+}
+
+.img1:not(:hover){
+-webkit-transition: -webkit-transform 0.5s ease;
+-moz-transition: -moz-transform 0.5s ease;
+transition: transform 0.5s ease;
+}
+
+.img2:hover{
+    -webkit-transform:scale(1.1,1.1);
+    transform:scale(1.1,1.1);
+	-webkit-transition: -webkit-transform 0.5s ease;
+    -moz-transition: -moz-transform 0.5s ease;
+    transition: transform 0.5s ease;
+	cursor: pointer;
+	
+}
+
+.img2:not(:hover){
+-webkit-transition: -webkit-transform 0.5s ease;
+-moz-transition: -moz-transform 0.5s ease;
+transition: transform 0.5s ease;
 }
 
 a:visited {
@@ -141,26 +170,27 @@ function Anketa() {
     <th>
 	<div>
 	<img class="img1" title="moja slika" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG0OUE_KHNO1uP8BwZT9RFB0cHbzxV2zDS8-Qv8GFdC8bGwjZx" 
-	alt="google.com" style="width:142px;height:142px;margin:20px 110px;margin-top:80px;border: 1px solid white;" 
-	onmouseover="src='slika1.jpg';style='width:120px;height:142px;border: 1px solid black;'"
-	onmouseout="src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG0OUE_KHNO1uP8BwZT9RFB0cHbzxV2zDS8-Qv8GFdC8bGwjZx';style='width:142px;height:142px;margin:20px 110px;margin-top:80px;border: 1px solid white;'">
+	alt="google.com" style="width:142px;height:142px;margin:1px 110px;margin-top:100px;margin-left: 80px;border: 1px solid white;" 
+	onmouseout="src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG0OUE_KHNO1uP8BwZT9RFB0cHbzxV2zDS8-Qv8GFdC8bGwjZx';style='width:142px;height:142px;margin:1px 110px;margin-top:100px;margin-left: 80px;border: 1px solid white;'"
+	onmouseover="src='slika1.jpg';style='width:142px;height:170px;margin:1px 110px;margin-top:73px;margin-left: 80px;border: 1px solid black;margin-bottom:0px;'" 
+	/>
 	</div>
 	<pre>
  Ime:   Domen
 Priimek:   Marinčič
    </pre>
 	</th>
-    <th><img src="http://www.stickpng.com/assets/images/58485698e0bb315b0f7675a8.png" alt="google.com" style="width:122px;height:122px;padding:20px 140px;padding-top:80px;">
+    <th><a href="mailto:domen1.marincic@gmail.com";><img class="img2" src="http://www.stickpng.com/assets/images/58485698e0bb315b0f7675a8.png" alt="google.com" style="width:122px;height:122px;margin:20px 140px;margin-top:80px;" onmouseout="src='http://www.stickpng.com/assets/images/58485698e0bb315b0f7675a8.png'"; onmouseover="src='https://i.imgur.com/8jdMhgb.png'";alt="imgur.com";></a>
 	<pre>
-E-mail:   <a title="E-mail" href="mailto:domen1.marincic@gmail.com">domen1.marincic@gmail.com</a>
+  E-mail:   <a title="E-mail" href="mailto:domen1.marincic@gmail.com">domen1.marincic@gmail.com</a>
     </pre>
 	</th>
-    <th><img src="https://image.freepik.com/free-icon/phone-symbol-of-an-auricular-inside-a-circle_318-50305.jpg" alt="google.com" style="width:122px;height:122px;padding:20px 140px;padding-top:80px;">
+    <th><a href="tel:+386 51 430 058"><img class="img2" src="https://image.freepik.com/free-icon/phone-symbol-of-an-auricular-inside-a-circle_318-50305.jpg" alt="google.com" style="width:122px;height:122px;margin:20px 140px;margin-top:80px;"></a>
     <pre>
 Tel. št.:  <a title="Telefonska številka" href="tel:+386 51 430 058">051-430-058<a>
     </pre>
 	</th>
-    <th><img src="https://image.flaticon.com/icons/svg/106/106123.svg" alt="google.com" style="width:122px;height:122px;padding:20px 120px;padding-top:80px;">
+    <th><a href="http://www.sckr.si/tsc/vss/"><img class="img2" src="https://i.imgur.com/RieN11K.png" alt="google.com" style="width:122px;height:122px;margin:20px 100px;margin-top:80px;" onmouseover="style='width:130px;height:130px;margin:20px 96px;margin-top:73px;;background-color: red;'" onmouseout="style='width:122px;height:122px;margin:20px 100px;margin-top:80px;;background-color: white;'"></a>
     <pre>
 Šolanje:  <a href="http://www.sckr.si/tsc/vss/">VSS Kranj<a>
     </pre>
@@ -170,7 +200,7 @@ Tel. št.:  <a title="Telefonska številka" href="tel:+386 51 430 058">051-430-058
  
 <div>
 
-<pre style="text-align:center;padding-top:200px;">
+<pre style="text-align:center;padding-top:280px;">
 <a href="http://www.sckr.si/tsc/vss/">About<a> VSS Kranj Announcements Community Security Center Resolution Center Seller Center Policies Affiliates Help & Contact Site Map
     Copyright © 1995-2018 VSS Kranj Inc. All Rights Reserved. Accessibility, User Agreement, Privacy, Cookies and AdChoice
 </pre>

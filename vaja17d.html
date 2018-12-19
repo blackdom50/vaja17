@@ -1,8 +1,9 @@
-ď»ż<html>
+<html>
 <head>
 <title>Anketa</title>
 </head>
 <body style="background-color: white;">
+<meta http-equiv="Content-Type" content="text/html;charset=windows-1250"/>
 <link href='https://fonts.googleapis.com/css?family=Aladin' rel='stylesheet'>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <h1 class="naslov">  Anketa</h1>
@@ -125,15 +126,15 @@ function Mojifilmi() {
 <body>
 <br>
 <div class="text" style="padding-left:320px;padding-top:50px">
-<form action="/action_page.php">
+<form action="vaja17e.html">
 <pre>
-                  Ime:   <input type="text" name="firstname" value=" ">
+                  Ime:   <input type="text" name="firstname" autocomplete="off" required>
 	  
-              Priimek:   <input type="text" name="lastname" value=" ">
+              Priimek:   <input type="text" name="lastname" autocomplete="off" required>
   
-               E-mail:   <input type="text" name="email" value=" ">
+               E-mail:   <input type="email" name="email" autocomplete="off" required>
    
-                 Spol:   <input type="radio" name="gender" value="moĹˇki" checked> moĹˇki <input type="radio" name="gender" value="Ĺľenski"> Ĺľenski
+                 Spol:   <input type="radio" name="gender" value="moški" checked> moški <input type="radio" name="gender" value="ženski"> ženski
 	 
 Ocena spletnega mesta:   <select>
    <option value="5">5</option>
@@ -143,16 +144,17 @@ Ocena spletnega mesta:   <select>
    <option value="1">1</option>
 </select>
 
-             Pripombe:   
-			 <textarea name="message" rows="10" cols="30">
+             Pripombe: 
+                         <textarea name="message" rows="10" cols="30">  
+			 
 
 </textarea> 
   
 
-                         <button type="button" onclick="poslji()"> PoĹˇlji </button>
+		        <input type="submit">
 <script>
 function poslji() {
-  window.location.assign("vaja17e.html")
+  
 }
 </script>
   </pre>

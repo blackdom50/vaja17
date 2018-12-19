@@ -3,8 +3,10 @@
 <title> Končana anketa </title>
 </head>
 <body style="background-color: white;">
+<meta http-equiv="Content-Type" content="text/html;charset=windows-1250"/>
 <link href='https://fonts.googleapis.com/css?family=Aladin' rel='stylesheet'>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <style>
 a:link {
   color: blue;
@@ -18,6 +20,11 @@ body {
     display: block;
     margin: 0px;
 }
+
+  table.center {
+    margin-left:auto; 
+    margin-right:auto;
+  }
 
 .button {
   background-color: #4CAF50;
@@ -76,6 +83,14 @@ body {
   cursor: default;
 }
 
+.text2 {
+  padding: 0px 50px;
+  border: none;
+  font-size: 24x;
+  font-family: Arial;
+  cursor: default;
+}
+
 .skupi {
   border: none;
   background-color: #ccffcc;
@@ -124,9 +139,27 @@ function Mojifilmi() {
 
 
 								
-		                 <b>Hvala za vaše mnenje!</b>
-					  
+		                 <b>Hvala za vaše mnenje!</b>	 		 
 </pre>
+<table class="center" style="horizontal-align: middle;">
+  <tr>
+    <th>Preusmeritev na domačo stran čez</th>
+    <th><div id="counter">5</div></th>
+    <th>sekund...</th>
+</tr>
+</table>
+<script>
+        setInterval(function() {
+            var div = document.querySelector("#counter");
+            var count = div.textContent * 1 - 1;
+            div.textContent = count;
+            if (count <= 0) {
+                window.location.replace("index.html");
+            }
+        }, 1000);
+    </script>
+				  
+
 <pre style="text-align:center;padding-top:320px;">
 <a href="http://www.sckr.si/tsc/vss/">About<a> VSS Kranj Announcements Community Security Center Resolution Center Seller Center Policies Affiliates Help & Contact Site Map
     Copyright © 1995-2018 VSS Kranj Inc. All Rights Reserved. Accessibility, User Agreement, Privacy, Cookies and AdChoice
